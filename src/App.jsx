@@ -1,5 +1,6 @@
 // src/App.jsx
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import Home from './components/Home';
 
 import Chat from './components/Chat';
 import Header from './components/Header'; 
@@ -15,6 +16,7 @@ function AppContent() {
       {!isChatPage && <Header />}
       <main className="flex-1 relative">
         <Routes>
+        <Route path="/" element={<Home />} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/chat/:chatId" element={<Chat />} />
         </Routes>
