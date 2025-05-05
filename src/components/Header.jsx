@@ -20,9 +20,9 @@ export default function Header({ onApiKeyClick }) {
         
         <nav className="flex items-center gap-6">
           <Link 
-            to="/" 
+            to="/chat" 
             className={`text-sm font-medium flex items-center gap-2 px-3 py-2 rounded-lg transition-all ${
-              location.pathname === '/' 
+              location.pathname === '/chat' 
                 ? 'text-tertiary shadow-neon' 
                 : 'text-white/70 hover:text-white hover:bg-white/5'
             }`}
@@ -32,7 +32,7 @@ export default function Header({ onApiKeyClick }) {
           </Link>
           
           <a 
-            href="https://github.com" 
+            href="https://github.com/rayan4-dot/kudoAi" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-white/70 hover:text-white flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/5 transition-all"
